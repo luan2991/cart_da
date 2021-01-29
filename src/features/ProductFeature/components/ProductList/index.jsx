@@ -2,7 +2,6 @@ import {
   Box,
   CircularProgress,
   Container,
-  FormControl,
   FormControlLabel,
   IconButton,
   InputAdornment,
@@ -10,10 +9,10 @@ import {
   TextField,
   Typography,
 } from '@material-ui/core';
+import Switch from '@material-ui/core/Switch';
 import { Search } from '@material-ui/icons';
 import { Pagination } from '@material-ui/lab';
 import PropTypes from 'prop-types';
-import Switch from '@material-ui/core/Switch';
 import React from 'react';
 import ProductItem from '../ProductItem';
 
@@ -191,7 +190,7 @@ function ProductList({
             </Box>
           </Box>
         )}
-        {!productdata.length && loading === false  && (
+        {!productdata.length && loading === false && (
           <Box minHeight={400} display="flex" justifyContent="center">
             <Typography> Không tìm thấy sản phẩm bạn cần</Typography>
           </Box>
