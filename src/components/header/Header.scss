@@ -1,0 +1,28 @@
+.header{
+    padding: 0.5rem 1rem;
+   
+
+    &_menu{
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0 -0.5rem;
+        list-style-type: none;
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    & > li{
+        padding: 0 0.5rem;
+        
+        
+    }
+
+    & > li > .active{
+        color: goldenrod;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+
+}
