@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import { Box } from '@material-ui/core';
-import EditForm from '../../components/EditForm';
-import productApi from '../../../../api/productApi';
+import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
+import productApi from '../../../../api/productApi';
+import EditForm from '../../components/EditForm';
 
 EditPage.propTypes = {};
 
